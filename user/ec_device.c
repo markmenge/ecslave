@@ -4,7 +4,7 @@
 void ec_init_device(struct ec_device *ec)
 {
 	pthread_mutexattr_t mta;
-
+    pthread_mutexattr_init(&mta); // Initialize mta
 	pthread_mutex_init(&ec->events_sync, &mta);
 	LIST_INIT(&ec->events);
 	memset(&ec->rx_time, 0x00, sizeof(ec->rx_time) );
