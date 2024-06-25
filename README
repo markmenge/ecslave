@@ -39,3 +39,10 @@ master.. <--  rx interface <-- slave <---tx interface <-... __|
 
 only ethercat stack is implemeted. User has to add his own code.
 
+
+To build ecslave in WSL
+
+git clone https://github.com/markmenge/ecslave.git
+cd ecslave
+chmod 755 ./build.sh
+./build.sh
